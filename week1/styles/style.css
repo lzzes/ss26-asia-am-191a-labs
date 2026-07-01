@@ -1,12 +1,13 @@
 * {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10;
     box-sizing: border-box;
+    color: rgb(77, 56, 97);
 }
 
 html{
-    background-color: aqua;
+    background-color: rgb(230, 216, 244);
 }
 
 html, body {
@@ -25,9 +26,23 @@ body {
 
 main {
     display: grid;
-    grid-template-areas:
-        "portfolio map";
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "portfolio map_title"
+        "portfolio map";
+}
+
+h1 {
+    grid-area: header;
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: rgb(109, 80, 137);
+}
+
+h2 {
+    grid-area: map_title;
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: rgb(109, 80, 137);
 }
 
 header {
@@ -44,9 +59,20 @@ main {
 
 #map {
     grid-area: map;
-    height: 80vh;
+    height: 75  vh;
 }
+
 
 footer {
     grid-area: footer;
 }
+
+ul {padding-left: 20px;}
+
+.img_head {
+    margin-left: 250px;
+    margin-bottom: 25px;
+}
+
+p {margin-bottom:15px;
+    margin-right: 20px;}
