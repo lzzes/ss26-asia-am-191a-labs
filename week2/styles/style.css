@@ -1,0 +1,98 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    color: rgb(77, 56, 97);
+}
+
+html{
+    background-color: rgb(230, 216, 244);
+}
+
+html, body {
+    height: 80vh;
+    padding: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "portfolio map_title" "portfolio buttons"
+        "portfolio map";
+}
+
+h1 {
+    grid-area: header;
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: rgb(109, 80, 137);
+}
+
+h2 {
+    grid-area: map_title;
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: rgb(109, 80, 137);
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.portfolio {
+    grid-area: portfolio;
+}
+
+#map {
+    grid-area: map;
+    height: 75  vh;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+ul {padding-left: 20px;}
+
+.img_head {
+    margin-left: 250px;
+    margin-bottom: 25px;
+}
+
+p {margin-bottom:15px;
+    margin-right: 20px;}
+
+#content button{
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 56, 164);
+    border: none;
+    padding: 15px 15px;
+}
+
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: buttons;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
