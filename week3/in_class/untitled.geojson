@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "ucla camp",
+                "color": "cyan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.442763,
+                    34.069105
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "immac",
+                "color": "#312E81"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.310256,
+                    34.106144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "debate camp",
+                "color": "blue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.164198,
+                    34.068183
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "place": "csulb",
+                "color": "yellow"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.113596,
+                    33.78523
+                ]
+            }
+        }
+    ]
+}

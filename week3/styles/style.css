@@ -1,0 +1,139 @@
+* {
+    font-family: 'Palatino', 'URW Palladio L', serif;
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(241, 234, 234);
+}
+
+html, body {
+    height: 80vh;
+    padding: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main";
+    grid-template-rows: auto auto auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2fr;
+    grid-template-areas:
+        "img_head survey" 
+        "map_title spacer"
+        "portfolio map";
+}
+
+h1 {
+    grid-area: header;
+    background-color: rgb(85, 1, 1);
+    color: white;
+    padding: 20px;
+    font-size:48px;
+}
+
+h2 {
+   grid-area: map_title;
+    text-align: left;
+    background-color: rgb(85, 1, 1);
+    color: white;
+    font-size:48px;
+    padding: 20px;
+}
+
+h3 {
+    background-color: rgb(85, 1, 1);
+    color: white;
+    font-size:32px;
+    padding: 10px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    text-decoration: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    color:rgb(85, 1, 1)
+}
+
+main {
+    grid-area: main;
+}
+
+.portfolio {
+    grid-area: portfolio;
+}
+
+#map {
+    grid-area: map;
+    height: 400px;
+}
+
+.img_header {grid-area: img_head;
+    padding: 0px;
+    margin-top: 15cm;
+}
+
+#empty{
+    grid-area:spacer;
+    background: rgb(85, 1, 1);
+}
+
+p {margin-bottom:15px;
+    margin-right: 20px;
+    line-height: 200%;
+    font-size: 18px}
+
+#content button{
+    font-family: 'DejaVu Sans Mono', monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 1, 1);
+    border: none;
+    padding: 15px 15px;
+}
+
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: portfolio;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#content memo{
+    color:rgb(0, 0, 0);
+    
+}
+
+#link {
+    grid-area: survey;
+    border-style: solid;
+    margin: auto;
+    padding: 32px;
+    
+    background-color: rgb(85, 1, 1);
+    
+    font-size: 32px;
+}
+
+#link a {color: white;
+    text-decoration: none;
+
+}

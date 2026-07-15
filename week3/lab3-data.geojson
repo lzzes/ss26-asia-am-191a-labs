@@ -1,0 +1,53 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bruin Plaza",
+                "Event": "Demonstration A",
+                "Quote": "Testimony goes here!",
+                "Color": "#00FF00"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.444773,
+                    34.070999
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Wilson Plaza",
+                "Event": "Demonstration B",
+                "Quote": "Testimony goes here!",
+                "Color": "#FF0000"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.444109,
+                    34.072201
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Royce Hall",
+                "Event": "Demonstration C",
+                "Quote": "Testimony goes here!",
+                "Color": "#0000FF"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.442191,
+                    34.072406
+                ]
+            }
+        }
+    ]
+}
