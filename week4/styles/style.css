@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: rgb(241, 234, 234);
+    background-color: rgb(140, 190, 255);
 }
 
 html, body {
@@ -35,23 +35,28 @@ main {
 
 h1 {
     grid-area: header;
-    background-color: rgb(85, 1, 1);
-    color: white;
+    background-color: rgb(0, 10, 255);
+    color: rgb(255, 255, 255);
     padding: 20px;
     font-size:48px;
+    font-family: "Impact", fantasy;
+    text-decoration: none;
+    text-shadow: 2px 2px black
 }
 
 h2 {
    grid-area: map_title;
     text-align: left;
-    background-color: rgb(85, 1, 1);
+    background-color: rgb(0,10,255);
     color: white;
     font-size:48px;
     padding: 20px;
+    font-family: "Impact", fantasy;
+    text-shadow: 2px 2px black;
 }
 
 h3 {
-    background-color: rgb(85, 1, 1);
+    background-color: rgb(0,10,255);
     color: white;
     font-size:32px;
     padding: 10px;
@@ -67,7 +72,7 @@ h4 {
 
 header {
     grid-area: header;
-    color:rgb(85, 1, 1)
+    color:rgb(0,10,255)
 }
 
 main {
@@ -91,20 +96,18 @@ main {
 
 #empty{
     grid-area:spacer;
-    background: rgb(85, 1, 1);
+    background: rgb(0,10,255);
 }
 
 p {margin-bottom:15px;
     margin-right: 20px;
-    line-height: 200%;
+    line-height: 150%;
     font-size: 18px}
 
 #contents button{
     font-size: 16px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(85, 1, 1);
     border: none;
-    padding: 15px 15px;
+    padding: 10px 10px;
 }
 
 
@@ -125,7 +128,7 @@ p {margin-bottom:15px;
     margin: 0px;
     padding: 32px;
     
-    background-color: rgb(163, 98, 98);
+    background-color: rgb(140,190,255);
     
     font-size: 32px;
 }
@@ -134,11 +137,33 @@ p {margin-bottom:15px;
     text-decoration: bold;
     text-align: center;
     font-size: 32px;
+    font-family: 'Impact', fantasy;
 
 }
 
 h5 {color: white;
     text-align: center;
     font-size: 24px;
-    background-color: rgb(85, 1, 1);
-    padding: 20px;}
+    background-color: rgb(0,10,255);
+    padding: 5px;}
+
+.circle
+{height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+/* code from css-shape.com */
+.star {
+  grid-area:map_caption;
+  width: 50px;  
+  aspect-ratio: 1;
+  background: #000000;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+}
